@@ -21,8 +21,15 @@ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo ap
 
 ## 1.4 Installation
 
+Make sure your Debian package is up-to-date:
+
 ```
 sudo apt update
+```
+
+Desktop-Full Install: 
+
+```
 sudo apt install ros-noetic-desktop-full
 ```
 
@@ -49,6 +56,25 @@ source ~/.zshrc
 ```
 
 
-## 1.6
+## 1.6 Dependencies for building packages
 
-## 1.6.1
+To install this tool and other dependencies for building ROS packages, run:
+
+```
+sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+```
+
+###### 1.6.1 Initialize rosdep
+
+rosdep enables you to easily install system dependencies for source you want to compile and is required to run some core components in ROS
+
+```
+sudo apt install python3-rosdep
+```
+
+With the following, you can initialize rosdep.
+
+```
+sudo rosdep init
+rosdep update
+```
