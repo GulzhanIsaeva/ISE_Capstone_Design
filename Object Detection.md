@@ -66,4 +66,5 @@ So, the Chromium browser opened a new tab automatically for Jupyter Notebook. Th
 
 <br/>
 
-The following process can be seen by the demo video!
+The following process can be seen by the demo video:
+[Demo video](https://youtu.be/W1h08Tyr6t8)
